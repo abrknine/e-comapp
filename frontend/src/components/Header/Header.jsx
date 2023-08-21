@@ -7,10 +7,7 @@ const Header = () => {
  
     <Navbar bg='primary' variant='dark' expand="lg" className="bg-body-tertiary">
     <Container>
-      <Navbar.Brand  >
-        <Link to='/'>
-      </Link>
-      </Navbar.Brand>
+      <Navbar.Brand ><Link to='/'> Take-notes </Link> </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className='m-auto'>
@@ -19,10 +16,10 @@ const Header = () => {
           </Form>
         </Nav>
         <Nav >
-          <Nav.Link href='/mynotes'>
-          <Link to='/mynotes'>
-      </Link>
-          </Nav.Link>
+          <Nav.Link href='/mynotes' > <Link to='/mynotes'>
+          My Notes
+          </Link>
+            </Nav.Link>
          
           <NavDropdown title="Abhishek" id="basic-nav-dropdown">
             <NavDropdown.Item href="#action/3.1">My Profile</NavDropdown.Item>
