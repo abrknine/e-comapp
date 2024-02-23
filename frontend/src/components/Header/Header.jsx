@@ -1,10 +1,14 @@
 import React from 'react'
 import {Container ,Form ,Nav,Navbar,NavDropdown, FormControl} from "react-bootstrap"
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
+
 
 const Header = () => {
+
+  const navigate= useNavigate()
+
   return (
- 
+    
     <Navbar bg='primary' variant='dark' expand="lg" className="bg-body-tertiary">
     <Container>
       <Navbar.Brand ><Link to='/'> Take-notes </Link> </Navbar.Brand>
@@ -24,7 +28,9 @@ const Header = () => {
           <NavDropdown title="Abhishek" id="basic-nav-dropdown">
             <NavDropdown.Item href="#action/3.1">My Profile</NavDropdown.Item>
             
-            <NavDropdown.Item href="#action/3.3">Logout</NavDropdown.Item>
+            <NavDropdown.Item onClick={()=>{localStorage.removeItem("userInfo")
+                             navigate('/')
+          }}> Logout </NavDropdown.Item>
            
           
           </NavDropdown>

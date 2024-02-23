@@ -1,0 +1,28 @@
+/*.loginContainer{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}*/
+/* LoginScreen.css */
+/* LoginScreen.css */
+.formBasicEmail .form-label,
+.formBasicPassword .form-label {
+  text-align: left;
+}
+
+.formBasicEmail .form-control,
+.formBasicPassword .form-control {
+  width: 100%;
+}
+
+/* Additional styles for better alignment */
+.loginContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.my-3 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
